@@ -50,7 +50,7 @@ def generate_video_concept(transcription, user_prompt, settings, api_key):
     """Generate video concept using Gemini"""
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""
         Create a detailed video concept based on this audio transcription and user description.
